@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+rear camera
+同信达-主供  OV13B10-GA5A
+合力泰-二供  HI1336
+金康-三供   3L6
+天实-四供   HI1336
+sub camera
+成像通-一供  GC2375H
+合力泰-二供  OV2680
+金康-三供   GC2375H
+成像通-四供  GC02M1
+
+rear camera:ov13b10_txd
+sub camera:gc2375h_cxt
+
+rear camera:hi1336_hs70_hlt
+sub camera:ov2680_hs70_hlt
+
+三供
+rear camera: s5k3l6_hs70_jk
+sub camera:  gc2375h_hs70_jk
+四供
+rear camera: hi1336_hs70_ts
+sub camera: gc02m1
+
+-->
+<Sensors>
+    <Item rear_camera="ov13b10_txd"  sub_camera= "gc2375h_cxt" filepath="/vendor/lib/dualcali_golden.bin"></Item>
+    <Item rear_camera="hi1336_hs70_hlt"  sub_camera= "ov2680_hs70_hlt" filepath="/vendor/lib/dualcali_golden_2.bin"></Item>
+    <Item rear_camera="s5k3l6_hs70_jk"  sub_camera= "gc2375h_hs70_jk" filepath="/vendor/lib/dualcali_golden_3.bin"></Item>
+    <Item rear_camera="hi1336_hs70_ts"  sub_camera= "gc02m1" filepath="/vendor/lib/dualcali_golden_4.bin"></Item>
+    <Item rear_camera="hi1336_hs70_xl"  sub_camera= "gc02m1_hs70_xl" filepath="/vendor/lib/dualcali_golden_5.bin"></Item>
+    <!-- HS70 code for HS70-4565 by zhangle at 2020-03-05 start. -->
+    <!-- Mix 2nd with 1st, with 1st priority.-->
+    <Item rear_camera="hi1336_hs70_hlt"  sub_camera= "gc2375h_cxt" filepath="/vendor/lib/dualcali_golden_6.bin"></Item>
+    <!-- Mix 1st with 2nd, with 2nd prioriyt.-->
+    <!-- Cancelled!!! -->
+    <!-- <Item rear_camera="ov13b10_txd"  sub_camera= "ov2680_hs70_hlt" filepath="/vendor/lib/dualcali_golden_7.bin"></Item> -->
+    <!-- Mix 2nd with 3rd, with 3rd priority.-->
+    <!-- Cancelled!!! -->
+    <!-- <Item rear_camera="hi1336_hs70_hlt"  sub_camera= "gc2375h_hs70_jk" filepath="/vendor/lib/dualcali_golden_8.bin"></Item> -->
+    <!-- add for NP camera marterial -->
+    <Item rear_camera="hi1336_hs70_xl"  sub_camera= "gc2375h_cxt" filepath="/vendor/lib/dualcali_golden_9.bin"></Item>
+    <!-- this configuration use dualcali_golden_9 -->
+    <Item rear_camera="s5k3l6_hs70_xl"  sub_camera= "gc2375h_cxt" filepath="/vendor/lib/dualcali_golden_9.bin"></Item>
+    <!-- The next have added at Jan 20 13:37:33 2020 -->
+    <!-- <Item rear_camera="hi1336_hs70_xl"  sub_camera= "gc02m1_hs70_xl" ></Item> -->
+    <!-- this configuaration use dualcali_golden_5 -->
+    <Item rear_camera="s5k3l6_hs70_xl"  sub_camera= "gc02m1_hs70_xl" filepath="/vendor/lib/dualcali_golden_5.bin"></Item>
+    <Item rear_camera="s5k3l6_hs70_cam"  sub_camera= "gc02m1_hs70_mcn" filepath="/vendor/lib/dualcali_golden_12.bin"></Item>
+    <!-- HS70 code for HS70-4565 by zhangle at 2020-03-05 end. -->
+    <!-- HS70 code for HS70-5114 by zhangle at 2020-04-07 start. -->
+    <Item rear_camera="ov13b10_txd"  sub_camera= "gc02m1" filepath="/vendor/lib/dualcali_golden_13.bin"></Item>
+    <!-- HS70 code for HS70-5114 by zhangle at 2020-04-07 end. -->
+    <Item rear_camera="hi1336_hs70_hlt"  sub_camera= "ov02b1b_hs70_hlt" filepath="/vendor/lib/dualcali_golden_14.bin"></Item>
+    <Item rear_camera="s5k3l6_hs70_jk"  sub_camera= "gc02m1_hs70_jk" filepath="/vendor/lib/dualcali_golden_15.bin"></Item>
+    <Item rear_camera="s5k3l6_hs70_qt"  sub_camera= "gc02m1" filepath="/vendor/lib/dualcali_golden_16.bin"></Item>
+</Sensors>
